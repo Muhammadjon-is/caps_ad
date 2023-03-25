@@ -28,14 +28,14 @@ const Product = (props) => {
             <div className="row">
               <Link
                 to={`/product/${product._id}/edit`}
-                className="btn btn-sm btn-outline-success p-2 pb-3 col-md-6"
+                className="btn btn-sm text-white button p-2 pb-3 col-md-6"
               >
                 <i className="fas fa-pen"></i>
               </Link>
               <Link
                 to="#"
                 onClick={() => deletehandler(product._id)}
-                className="btn btn-sm btn-outline-danger p-2 pb-3 col-md-6"
+                className="btn btn-sm  text-white button p-2 pb-3 col-md-6"
               >
                 <i className="fas fa-trash-alt"></i>
               </Link>

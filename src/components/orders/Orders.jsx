@@ -20,7 +20,7 @@ const Orders = (props) => {
           </th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="forWhite">
         {orders.map((order) => (
           <tr key={order._id}>
            <td>
@@ -47,8 +47,8 @@ const Orders = (props) => {
                 <span className="badge btn-dark">Not delivered</span>
               )}
             </td>
-            <td className="d-flex justify-content-end align-item-center">
-              <Link to={`/order/${order._id}`} className="text-success">
+            <td className="d-flex  justify-content-end align-item-center">
+              <Link to={`/order/${order._id}`} className=" forWhite">
                 <i className="fas fa-eye"></i>
               </Link>
             </td>

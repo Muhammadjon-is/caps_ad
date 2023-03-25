@@ -24,7 +24,7 @@ const MainProducts = () => {
       <div className="content-header">
         <h2 className="content-title">Products</h2>
         <div>
-          <Link to="/addproduct" className="btn btn-primary">
+          <Link to="/addproduct" className="btn text-white button">
             Create new
           </Link>
         </div>
@@ -33,7 +33,7 @@ const MainProducts = () => {
       <div className="card mb-4 shadow-sm">
 
 
-        <div className="card-body">
+        <div className="card-body forPro">
           {errorDelete && (
             <Message variant="alert-danger">{errorDelete}</Message>
           )}
@@ -42,7 +42,7 @@ const MainProducts = () => {
           ) : error ? (
             <Message variant="alert-danger">{error}</Message>
           ) : (
-            <div className="row">
+            <div className="row ">
               {/* Products */}
               {products.map((product) => (
                 <Product product={product} key={product._id} />

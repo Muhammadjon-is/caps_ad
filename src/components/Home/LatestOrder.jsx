@@ -16,7 +16,7 @@ const LatestOrder = (props) => {
         <Message variant="alert-danger">{error}</Message>
       ) : (
         <div className="table-responsive">
-          <table className="table">
+          <table className="table forWhite">
             <tbody>
             {orders.slice(0, 5).map((order) => (
     <tr key={order._id}>

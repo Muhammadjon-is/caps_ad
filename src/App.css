@@ -1,4 +1,14 @@
-
+:root {
+  --color-131921: #131921;
+  --color-3b4149: #3b4149;
+  --color-febd69: #febd69;
+  --color-232f3e: #232f3e;
+  --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
+  --color-ededed: #ededed;
+  --color-777777: #777777;
+  --color-1c1c1b: #1c1c1b;
+}
 body{
   color: orange !important;
   background-color: #222;
@@ -16,10 +26,12 @@ tbody td {
   border-bottom: 0;
 }
 tbody tr {
-  border-bottom: 1px solid #cfdbe6;
+  border-bottom: 1px solid #ffffff;
 }
 tbody tr:hover {
-  background-color: #ebf0fd !important;
+  /* color: white; */
+  
+  /* background-color: #6d6d6d !important; */
 }
 a.disabled {
   pointer-events: none;
@@ -211,7 +223,7 @@ body.offcanvas-active {
   border: 2px solid #eee;
 }
 .nav-item img.rounded-circle:hover {
-  border-color: #4fa607;
+  border-color: #ffffff;
 }
 
 .content-header {
@@ -298,7 +310,7 @@ body.aside-mini .menu-aside .menu-item.has-submenu .menu-link:after {
   font-size: 18px;
 }
 .menu-aside .active .icon {
-  color: #4fa607;
+  color: orange;
 }
 .menu-aside .active {
   background-color: #ebf0fd;
@@ -424,6 +436,7 @@ a[class*="card"]:hover .title {
 .itemside .info {
   padding-left: 15px;
   padding-right: 7px;
+  color: orange;
 }
 .itemside p {
   margin-bottom: 0;
@@ -433,12 +446,13 @@ a[class*="card"]:hover .title {
   margin-bottom: 5px;
 }
 .itemside a.title:hover {
-  color: #4fa607;
+  color: #fdfdfd;
 }
 
 a.itemside {
   color: initial;
   text-decoration: none;
+  color: orange;
 }
 a.itemside:hover .title {
   text-decoration: underline;
@@ -476,14 +490,15 @@ a.itemside:hover .title {
 }
 .card-product-grid .info-wrap {
   padding: 1rem;
+  background-color: #141414;
 }
 .card-product-grid a.title {
-  color: #6c757d;
+  color: orange;
   display: block;
   text-decoration: none;
 }
 .card-product-grid a.title:hover {
-  color: #4fa607;
+  color: #dddddd;
 }
 .card-product-grid:hover {
   border-color: #adb5bd;
@@ -512,7 +527,7 @@ a.itemside:hover .title {
 .card-user .card-header {
   position: relative;
   height: 100px;
-  background-color: #f0fae7 !important;
+  background-color: #222 !important;
   text-align: center;
 }
 .card-user .img-avatar {
@@ -625,7 +640,7 @@ ul.row-sm {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 12px;
-  color: #00b517;
+  color: #fdfdfd;
   position: absolute;
   top: 2px;
   left: 0;
@@ -642,7 +657,7 @@ ul.row-sm {
 }
 .list-normal li:before {
   content: "•";
-  color: #4fa607;
+  color: #fdfffc;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
@@ -660,7 +675,7 @@ ul.row-sm {
   color: #141432;
 }
 .list-menu a:hover {
-  color: #4fa607;
+  color: #ececec;
 }
 
 .cols-two {
@@ -811,7 +826,7 @@ ul.row-sm {
 
 .form-control:hover,
 .form-select:hover {
-  border-color: #4fa607;
+  border-color: #ffffff;
 }
 
 .btn-facebook {
@@ -899,7 +914,7 @@ ul.row-sm {
   color: orange !important;
 } 
 .card-body{
-  background-color: white;
+  background-color: #111111;
   color: orange ;
 }
 .rounded-circle{
@@ -945,5 +960,26 @@ select{
 }
 textarea{
   border-radius: 10px !important;
-  color: coral !important;
+}
+.button {
+  background-color: var(--color-232f3e);
+  color: white;
+  font-size: 14px;
+  padding: 13px 33px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+.forPro{
+  background-color: #000;
+}
+button a:hover{
+  cursor: pointer ;
+  color: white !important;
+}
+.forWhite{
+  color: orange
+}
+.forWhite a:hover{
+  cursor: pointer;
+  color: white !important;
 }

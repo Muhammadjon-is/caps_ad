@@ -32,7 +32,7 @@ const OrderDetailmain = (props) => {
   return (
     <section className="content-main">
       <div className="content-header">
-        <Link to="/orders" className="btn btn-dark text-white">
+        <Link to="/orders" className="btn button text-white">
           Back To Orders
         </Link>
       </div>
@@ -43,7 +43,7 @@ const OrderDetailmain = (props) => {
         <Message variant="alert-danger">{error}</Message>
       ) : (
         <div className="card">
-          <header className="card-header p-3 Header-green">
+          <header className="card-header forWhite p-3 Header-green">
             <div className="row align-items-center ">
               <div className="col-lg-6 col-md-6">
                 <span>

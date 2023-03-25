@@ -67,11 +67,11 @@ const UserComponent = () => {
                         {user.isAdmin === true ? (
                           <p className="m-0">Admin</p>
                         ) : (
-                          <p className="m-0">Customer</p>
+                          <p className="m-0 text-white">Customer</p>
                         )}
 
-                        <p>
-                          <a href={`mailto:${user.email}`}>{user.email}</a>
+                        <p className="btn button text-white">
+                          <a className="button" href={`mailto:${user.email}`}>{user.email}</a>
                         </p>
                       </div>
                     </div>

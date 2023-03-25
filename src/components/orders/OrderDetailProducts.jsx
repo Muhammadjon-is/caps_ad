@@ -16,7 +16,7 @@ const OrderDetailProducts = (props) => {
   }
 
   return (
-    <table className="table border table-lg">
+    <table className="table border forWhite table-lg">
       <thead>
         <tr>
           <th style={{ width: "40%" }}>Product</th>
@@ -68,11 +68,11 @@ const OrderDetailProducts = (props) => {
                 <dt className="text-muted">Status:</dt>
                 <dd>
                   {order.isPaid ? (
-                    <span className="badge rounded-pill alert alert-success text-success">
+                    <span className="badge  button text-white rounded-pill alert alert-success ">
                       Payment done
                     </span>
                   ) : (
-                    <span className="badge rounded-pill alert alert-danger text-danger">
+                    <span className="badge button text-white  rounded-pill alert alert-danger ">
                       Not Paid
                     </span>
                   )}
