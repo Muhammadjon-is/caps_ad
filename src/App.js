@@ -18,7 +18,7 @@ import UsersScreen from "./screens/UsersScreen";
 import ProductEditScreen from "./screens/ProductEditScreen";
 import NotFound from "./screens/NotFound";
 
-// import AdminRoute from "./AdminRoute";
+import AdminRoute from "./AdminRoute";
 
 function App() {
   const dispatch = useDispatch();
@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        
+        <Route  element={<AdminRoute/>}>
           <Route path="/" element={<HomeScreen />} exact />
           <Route path="/products" element={<ProductScreen />} />
           <Route path="/orders" element={<OrderScreen />} />
@@ -44,7 +44,7 @@ function App() {
           <Route path="/users" element={<UsersScreen />} />
           <Route path="/product/:id/edit" element={<ProductEditScreen />} />
           <Route path="*" element={<NotFound />} />
-      
+          </Route>
         <Route path="/login" element={<Login />} />
       </Routes>
     </div>
