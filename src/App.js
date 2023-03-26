@@ -19,6 +19,7 @@ import ProductEditScreen from "./screens/ProductEditScreen";
 import NotFound from "./screens/NotFound";
 
 import AdminRoute from "./AdminRoute";
+import ContactScren from "./screens/ContactScren";
 
 function App() {
   const dispatch = useDispatch();
@@ -43,6 +44,7 @@ function App() {
           <Route path="/addproduct" element={<AddProduct />} />
           <Route path="/users" element={<UsersScreen />} />
           <Route path="/product/:id/edit" element={<ProductEditScreen />} />
+          <Route path="/contact" element={<ContactScren/>} />
           <Route path="*" element={<NotFound />} />
           </Route>
         <Route path="/login" element={<Login />} />

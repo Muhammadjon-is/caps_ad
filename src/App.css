@@ -9,7 +9,7 @@
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
 }
-body{
+body {
   color: orange !important;
   background-color: #222;
 }
@@ -30,7 +30,7 @@ tbody tr {
 }
 tbody tr:hover {
   /* color: white; */
-  
+
   /* background-color: #6d6d6d !important; */
 }
 a.disabled {
@@ -43,8 +43,6 @@ a.disabled {
 .Header-green {
   background-color: #4fa607;
 }
-  
-
 
 /* =================  DEFINED VARIABLES =================== */
 .icon-xs,
@@ -195,7 +193,7 @@ body.offcanvas-active {
   padding-left: 3%;
   padding-right: 3%;
   min-height: 72px;
-  background-color: #595959;;
+  background-color: #595959;
   border-bottom: 1px solid rgba(108, 117, 125, 0.25);
 }
 .main-header .nav {
@@ -905,35 +903,33 @@ ul.row-sm {
   vertical-align: bottom;
 }
 
+/* new additional styles added to class names below  */
+/* --------------------------------------------------- */
 
- /* new additional styles added to class names below  */
- /* --------------------------------------------------- */
-
-
- .text{
+.text {
   color: orange !important;
-} 
-.card-body{
-  background-color: #111111;
-  color: orange ;
 }
-.rounded-circle{
+.card-body {
+  background-color: #111111;
+  color: orange;
+}
+.rounded-circle {
   border-color: orange !important;
 }
-.menu-aside .menu-link:hover{
+.menu-aside .menu-link:hover {
   background-color: #111;
 }
-.menu-link:hover .text{
-color: #fff !important;
+.menu-link:hover .text {
+  color: #fff !important;
 }
 
 .page-item.active .page-link {
   background-color: orange;
-  border-color: orange;}
+  border-color: orange;
+}
 
-  .card-header {
-    background-color: #222;
-  
+.card-header {
+  background-color: #222;
 }
 .bg-white {
   background-color: white;
@@ -941,24 +937,20 @@ color: #fff !important;
 
 .btn-danger {
   background-color: #222;
-
 }
 .btn-primary {
-  background-color: #111!important;
+  background-color: #111 !important;
   border: 1px solid #4fa607 !important;
 }
 
-
-
-input::placeholder{
+input::placeholder {
   color: coral !important;
 }
 
-select{
+select {
   border-radius: 10px !important;
-
 }
-textarea{
+textarea {
   border-radius: 10px !important;
 }
 .button {
@@ -969,17 +961,17 @@ textarea{
   border-radius: 25px;
   text-decoration: none;
 }
-.forPro{
+.forPro {
   background-color: #000;
 }
-button a:hover{
-  cursor: pointer ;
+button a:hover {
+  cursor: pointer;
   color: white !important;
 }
-.forWhite{
-  color: orange
+.forWhite {
+  color: orange;
 }
-.forWhite a:hover{
+.forWhite a:hover {
   cursor: pointer;
   color: white !important;
 }
