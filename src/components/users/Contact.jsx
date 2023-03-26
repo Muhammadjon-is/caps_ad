@@ -28,29 +28,46 @@ const Contact = () => {
             <th scope="col" className="text-white">
               Message
             </th>
+            <th scope="col" className="text-white">
+              Date
+            </th>
           </tr>
         </thead>
         <tbody className="forWhite">
           {contacts.map((contact) => (
             <tr key={contact._id}>
-              <td>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                  <p>Name: {contact.name}</p>
+              <td className="border">
+                <div class="col-sm-12 col-md-6 col-lg-4 ">
+                  <p> {contact.name}</p>
                 </div>
               </td>
-              <td>
-                {" "}
-                <div class="col-sm-12 col-md-6 col-lg-4">
+              <td className="border">
+                <div class="col-sm-12 col-md-6 col-lg-4 ">
                   <p>
-                    Email:{" "}
-                    <a href={`mailto:${contact.email}`}>{contact.email}</a>{" "}
+                    <a className="text-yellow" href={`mailto:${contact.email}`}>
+                      {contact.email}
+                    </a>
                   </p>
                 </div>
               </td>
-              <td>
-                {" "}
+              <td className="border">
                 <div class="col-sm-12 col-md-12 col-lg-4">
-                  <p>Message: {contact.message}</p>
+                  <p> {contact.message}</p>
+                </div>
+              </td>
+              <td className="border forDate">
+                <div class="col-sm-12 col-md-12 col-lg-4 forDate">
+                  <p>
+                    {" "}
+                    {new Date(contact.createdAt).toLocaleDateString("en-US", {
+                      year: "2-digit",
+                      month: "2-digit",
+                      day: "2-digit",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    })}
+                  </p>
+                
                 </div>
               </td>
             </tr>

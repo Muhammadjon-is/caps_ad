@@ -975,3 +975,6 @@ button a:hover {
   cursor: pointer;
   color: white !important;
 }
+.forDate{
+  width: 160px;
+}
