@@ -54,7 +54,7 @@ const AddProductMain = () => {
             </Link>
             <h2 className="content-title">Add product</h2>
             <div>
-              <button type="submit" className="btn button text-white">
+              <button type="submit" className="btn  button text-white">
                 Publish now
               </button>
             </div>
