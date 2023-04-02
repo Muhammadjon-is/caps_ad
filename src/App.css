@@ -944,7 +944,7 @@ ul.row-sm {
 }
 
 input::placeholder {
-  color: coral !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 select {
